@@ -1,0 +1,112 @@
+/* Reset para remover margens */
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+}
+/* Estilos para o cabeçalho do site */
+.site-header {
+  background-color: #1e1e1e;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Estilos para o logo */
+.logo-container { padding: 25px 0; }
+.logo-img { max-height: 17vh; display: block; }
+
+/* Estilos para a barra de navegação */
+.nav-bar {
+  width: 100%;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+/* Estilos para o conteúdo da barra de navegação */
+.nav-content {
+  list-style: none; /* Remove as bolinhas da lista */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 20px; /* O padding vertical subiu para cá */
+  display: flex;
+  align-items: center;
+}
+
+/* Adiciona o separador "|" entre os itens, exceto o último */
+.nav-content > li:not(:last-child)::after {
+  content: "|";
+  color: #ffffff;
+  margin: 0 15px;
+  font-weight: 300;
+}
+
+/* Estilos para os links dentro da barra de navegação */
+.nav-content a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* --- Criação do menu suspenso --- */
+/* Diz para o sub-menu se alinhar baseado neste item */
+.dropdown {
+  position: relative;
+}
+/* Estilização do botão que ativa o menu suspenso */
+.arrow {
+  font-size: 10px;
+  margin-left: 5px;
+}
+/* Estilização do Menu Oculto */
+.dropdown-menu {
+  display: none; /* Esconde o menu por padrão */
+  position: absolute;
+  top: 100%; /* Posiciona o menu logo abaixo do item pai */
+  left: 0;
+  background-color: #1e1e1e;
+  border: 1px solid #ffffff;
+  list-style: none;
+  min-width: 180px;
+  margin-top: 13px; /* Cria um espaço entre o item pai e o menu suspenso */
+  z-index: 10;
+}
+
+/* Estilização dos itens dentro do menu suspenso */
+.dropdown-menu li {
+  width: 100%;
+}
+
+/* Estilização dos links dentro do menu suspenso */
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 15px;
+  font-size: 14px;
+  white-space: nowrap; /* Impede o texto de quebrar linha */
+}
+
+/* Efeito de destaque para os itens do menu suspenso */
+.dropdown-menu li a:hover {
+  background-color: #2b2b2b;
+}
+
+/* Exibe o menu suspenso quando o mouse estiver sobre o item pai */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Criação de uma ponte invisível para evitar que o menu desapareça ao mover o mouse entre o item pai e o menu suspenso */
+.dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -15px;      /* Sobe e cobre exatamente a área do margin-top */
+  left: 0;
+  width: 100%;
+  height: 15px;    /* Altura da ponte invisível */
+  background: transparent; /* Fica invisível para o usuário */
+}
