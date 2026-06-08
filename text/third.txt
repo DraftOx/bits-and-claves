@@ -1,0 +1,6 @@
+3ª Geração (1983 – 2003): Os 8-Bits e o Nascimento das Trilhas Sonoras
+Esta é a geração que salvou a indústria após o "Crash de 1983". Aqui nasce a música de videogame como a conhecemos (o chiptune).
+
+Consoles Principais: NES (Nintendinho), Sega Master System, Atari 7800.
+
+O Som: O chip Ricoh 2A03 do NES, com seus 5 canais (2 pulsos, 1 triângulo, 1 ruído e 1 DPCM), forçou compositores como Koji Kondo (Super Mario) a criarem melodias geniais e inesquecíveis, já que não podiam depender de instrumentos reais.
