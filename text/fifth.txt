@@ -1,0 +1,6 @@
+5ª Geração (1993 – 2005): A Revolução do CD (32/64-bits)
+A capacidade de armazenamento salta de alguns Megabytes para 700MB, mudando a música nos jogos para sempre.
+
+Consoles Principais: PlayStation 1, Sega Saturn, Nintendo 64.
+
+O Som: PS1 e Saturn adotaram o CD, permitindo áudio Red Book — ou seja, músicas pré-gravadas em qualidade de estúdio, permitindo bandas reais e cantores (como em Wipeout ou Castlevania: Symphony of the Night). O N64, que continuou nos cartuchos, dependia de arquivos MIDI sequenciados tocados em tempo real, exigindo otimização extrema.
