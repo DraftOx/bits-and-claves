@@ -123,60 +123,67 @@ body {
   background: transparent; /* Torna a ponte invisível */
 }
 
+/* Estilos para o conteúdo principal do site */
 main {
     flex: 1; /* Faz o main ocupar o espaço restante */
 }   
 
+/* Estilos para o contêiner principal do conteúdo da homepage */
 .container-principal {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  display: flex; /* Usa Flexbox para organizar o layout do contêiner principal */
+  align-items: center; /* Alinha os itens ao centro verticalmente para criar um layout mais equilibrado e visualmente agradável, especialmente em telas maiores */
+  justify-content: space-between; /* Alinha os itens ao centro verticalmente e distribui o espaço entre eles para criar um layout equilibrado, especialmente em telas maiores */
+  gap: 40px; /* Adiciona um espaço de 40px entre os elementos dentro do contêiner principal para criar um layout mais equilibrado e visualmente agradável, especialmente em telas maiores */
+  padding: 20px; /* Adiciona um pouco de padding para criar espaço dentro do contêiner principal, garantindo que o conteúdo não fique colado nas bordas e proporcionando um layout mais equilibrado e visualmente agradável */
+  max-width: 1200px; /* Define uma largura máxima para o contêiner principal para evitar que ele fique muito largo em telas maiores, garantindo que o layout permaneça equilibrado e visualmente agradável */
+  margin: 0 auto; /* Centraliza o contêiner principal horizontalmente na página, garantindo que o layout seja equilibrado e visualmente agradável, especialmente em telas maiores */
 }
 
+/* Estilos para o contêiner do vídeo na homepage */
 .video-container {
-  flex: 1;
-  max-width: 500px;
+  flex: 1; /* Permite que o contêiner do vídeo ocupe o espaço disponível, tornando-o flexível e adaptável a diferentes tamanhos de tela, garantindo que o layout seja responsivo e equilibrado */
+  max-width: 500px; /* Define uma largura máxima para o contêiner do vídeo para evitar que ele fique muito grande em telas maiores, garantindo que o layout permaneça equilibrado e visualmente agradável */
 }
 
+/* Estilos para o elemento de vídeo dentro do contêiner do vídeo */
 .video-container video {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+  width: 100%; /* Garante que o vídeo ocupe toda a largura do contêiner, tornando-o responsivo e adaptável a diferentes tamanhos de tela */
+  height: auto; /* Garante que o vídeo seja responsivo, ajustando sua largura ao contêiner e mantendo a proporção original */
+  border-radius: 8px; /* Adiciona bordas arredondadas ao vídeo para um visual mais moderno e suave */
 }
 
+/* Estilos para a descrição do vídeo */
 .video-description {
-  text-align: right;
-  color: #ffffff;
-  font-size: 11px;
+  text-align: right; /* Alinha o texto da descrição do vídeo à direita para criar um layout mais dinâmico e equilibrado, especialmente quando o vídeo está posicionado à esquerda */
+  color: #ffffff; /* Define a cor da descrição do vídeo como branco para garantir boa legibilidade contra o fundo escuro do site */
+  font-size: 11px; /* Define o tamanho da fonte da descrição do vídeo para um estilo mais discreto */
 }
 
+/* Estilos para o título da homepage */
 .title-homepage {
-  color: #ffffff;
-  text-align: center;
-  margin-top: -80px;
+  color: #ffffff; /* Define a cor do título da homepage como branco para garantir boa legibilidade contra o fundo escuro do site */
+  text-align: center; /* Centraliza o texto do título da homepage para criar um layout mais equilibrado e atraente */
+  margin-top: -80px; /* Adiciona um espaço negativo para puxar o título para cima, criando um efeito de sobreposição com o vídeo e dando um destaque visual ao título da homepage */
 }
 
+/* Estilos para o subtítulo da homepage */
 .subtitle-homepage {
-  color: #ffffff;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 40px;
+  color: #ffffff; /* Define a cor do subtítulo da homepage como branco */
+  text-align: center; /* Centraliza o texto do subtítulo da homepage para criar um layout mais equilibrado */
+  margin-top: 10px; /* Adiciona um espaço superior para separar o subtítulo do título principal da homepage */
+  margin-bottom: 40px; /* Adiciona um espaço inferior para separar o subtítulo do conteúdo principal da homepage */
 }
 
-
+/* Estilos para o texto da homepage */
 .homepage-text {
-  color: #ffffff;
-  text-indent: 1em;
-  text-align: justify;
-  font-size: 18px;
-  line-height: 1.3;
+  color: #ffffff; /* Define a cor do texto da homepage como branco */
+  text-indent: 1em; /* Adiciona um recuo na primeira linha do parágrafo para melhorar a legibilidade */
+  text-align: justify; /* Justifica o texto para criar um layout mais limpo e organizado */
+  font-size: 18px; /* Define o tamanho da fonte do texto da homepage para um estilo mais legível */
+  line-height: 1.3; /* Define a altura da linha para melhorar a legibilidade do texto da homepage */
 }
 
-
+/* Estilos para o rodapé do site */
 .footer-text {
     color: #ffffff; /* Define a cor do texto do rodapé como branco */
     font-size: 12px; /* Define o tamanho da fonte do texto do rodapé */
@@ -184,16 +191,18 @@ main {
     padding: 20px 0; /* Adiciona um pouco de padding para criar espaço dentro do rodapé */
 }
 
-/*configuração video e texto no celular*/
-@media (max-width: 768px) {
-  .container-principal {
-    flex-direction: column;
-    text-align: center;
-    gap: 24px;
+/* Configurações para responsividade em dispositivos móveis */
+@media (max-width: 768px) { /* Aplica estilos para telas com largura máxima de 768px (dispositivos móveis) */
+  .container-principal { 
+    flex-direction: column; /* Organiza os elementos em uma coluna para dispositivos móveis */
+    text-align: center; /* Centraliza o texto para dispositivos móveis */
+    gap: 24px; /* Reduz o espaço entre os elementos para dispositivos móveis */
   }
 
   .video-container {
-    max-width: 100%;
+    max-width: 100%; /* Garante que o vídeo ocupe toda a largura disponível em dispositivos móveis */
+  }
+  .title-homepage {
+    margin-top: 20px; /* Remove o -80px e cria um respiro normal no celular */
   }
 }
-/*final da configuiração mobile*/
