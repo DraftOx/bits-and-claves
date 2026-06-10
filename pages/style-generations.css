@@ -128,21 +128,25 @@ main {
     flex: 1; /* Faz o main ocupar o espaço restante */
 }   
 
-/* Estilos para o contêiner do vídeo na homepage */
-.video-container {
+/* Estilos para o contêiner do canva */
+.canva-container {
   flex: 1; /* Permite que o contêiner do vídeo ocupe o espaço disponível, tornando-o flexível e adaptável a diferentes tamanhos de tela, garantindo que o layout seja responsivo e equilibrado */
   max-width: 500px; /* Define uma largura máxima para o contêiner do vídeo para evitar que ele fique muito grande em telas maiores, garantindo que o layout permaneça equilibrado e visualmente agradável */
+  margin-top: 120px; /* Adiciona um espaço superior para separar o contêiner do vídeo do conteúdo acima, criando um layout mais equilibrado e visualmente agradável */
 }
 
-/* Estilos para o elemento de vídeo dentro do contêiner do vídeo */
-.video-container video {
-  width: 100%; /* Garante que o vídeo ocupe toda a largura do contêiner, tornando-o responsivo e adaptável a diferentes tamanhos de tela */
-  height: auto; /* Garante que o vídeo seja responsivo, ajustando sua largura ao contêiner e mantendo a proporção original */
-  border-radius: 8px; /* Adiciona bordas arredondadas ao vídeo para um visual mais moderno e suave */
+/* Estilos para o canvas do jogo Pong */
+.canva-container canvas {
+  width: 100%; /* Faz o jogo encolher e se adaptar perfeitamente à coluna da direita */
+  height: auto; 
+  border-radius: 8px; /* Mantém o padrão visual moderno do seu site */
+  background-color: #000000; /* Garante fundo preto para a tela do jogo */
+  border: 2px solid #ffffff; /* Dá um destaque legal imitando uma TV antiga de tubo */
+  display: block;
 }
 
-/* Estilos para a descrição do vídeo */
-.video-description {
+/* Estilos para a descrição do pong*/
+.canva-description {
   text-align: right; /* Alinha o texto da descrição do vídeo à direita para criar um layout mais dinâmico e equilibrado, especialmente quando o vídeo está posicionado à esquerda */
   color: #ffffff; /* Define a cor da descrição do vídeo como branco para garantir boa legibilidade contra o fundo escuro do site */
   font-size: 11px; /* Define o tamanho da fonte da descrição do vídeo para um estilo mais discreto */
@@ -207,10 +211,23 @@ footer {
     padding: 20px 0; /* Adiciona um pouco de padding para criar espaço dentro do rodapé */
 }
 
+/* Esconde o texto do celular por padrão */
+.apenas-celular {
+    display: none;
+}
+
 /* Configurações para responsividade em dispositivos móveis */
 @media (max-width: 768px) { /* Aplica estilos para telas com largura máxima de 768px (dispositivos móveis) */
-  .video-container {
-    max-width: 100%; /* Garante que o vídeo ocupe toda a largura disponível em dispositivos móveis */
+  .apenas-computador {
+      display: none;
+  }
+
+  .apenas-celular { 
+      display: block; /* Exibe o texto específico para celular quando a tela for pequena */
+  }
+  
+  .canva-container {
+    max-width: 100%; /* Garante que o canvas ocupe toda a largura disponível em dispositivos móveis */
   }
 
   .title-homepage {
