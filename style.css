@@ -131,7 +131,7 @@ main {
 /* Estilos para o contêiner principal do conteúdo da homepage */
 .container-principal {
   display: flex; /* Usa Flexbox para organizar o layout do contêiner principal */
-  align-items: center; /* Alinha os itens ao centro verticalmente para criar um layout mais equilibrado e visualmente agradável, especialmente em telas maiores */
+  align-items: flex-start; /* Alinha os itens ao início do contêiner para criar um layout mais dinâmico e equilibrado, especialmente em telas maiores */
   justify-content: space-between; /* Alinha os itens ao centro verticalmente e distribui o espaço entre eles para criar um layout equilibrado, especialmente em telas maiores */
   gap: 40px; /* Adiciona um espaço de 40px entre os elementos dentro do contêiner principal para criar um layout mais equilibrado e visualmente agradável, especialmente em telas maiores */
   padding: 20px; /* Adiciona um pouco de padding para criar espaço dentro do contêiner principal, garantindo que o conteúdo não fique colado nas bordas e proporcionando um layout mais equilibrado e visualmente agradável */
@@ -163,7 +163,7 @@ main {
 .title-homepage {
   color: #ffffff; /* Define a cor do título da homepage como branco para garantir boa legibilidade contra o fundo escuro do site */
   text-align: center; /* Centraliza o texto do título da homepage para criar um layout mais equilibrado e atraente */
-  margin-top: -80px; /* Adiciona um espaço negativo para puxar o título para cima, criando um efeito de sobreposição com o vídeo e dando um destaque visual ao título da homepage */
+  margin-top: 0px; /* Remove a margem superior do título da homepage para criar um layout mais compacto e equilibrado, especialmente em telas menores */
 }
 
 /* Estilos para o subtítulo da homepage */
