@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style-generations.css">
     <title>2ª Geração - Bits & Claves</title>
 </head>
 <body>
@@ -32,15 +32,39 @@
             </ul>
         </nav>
     </header>
-    <main> 
-        <h1>2ª Geração de Consoles</h1>
-        <p>A segunda geração de consoles de videogame é caracterizada por consoles que introduziram tecnologias avançadas e experiências de jogo mais imersivas:</p>
-        <ul>
-            <li><strong>PlayStation</strong> - Lançado pela Sony em dezembro de 1994, o PlayStation é conhecido por seu design inovador e suporte a jogos em 3D.</li>
-            <li><strong>Nintendo 64</strong> - Lançado pela Nintendo em setembro de 1996, o Nintendo 64 é um console que se destaca pela sua capacidade de renderização em 3D e pela introdução de novos tipos de jogos.</li>
-            <li><strong>Sega Saturn</strong> - Lançado pela Sega em novembro de 1995, o Sega Saturn é um console que se destaca pela sua arquitetura única e pelo suporte a jogos em alta definição.</li>
-        </ul>
-    </main>
+    <div class="container-generations">
+        <main>
+            <h1 class="title-generations">2ª Geração <span class="year-subtitle">(1976 – 1983)</span></h1>
+            <h2 class="subtitle-generations">O Surgimento dos Chips de Áudio e das Primeiras Melodias</h2>
+            <p class="generations-text">
+                Com a chegada dos consoles baseados em cartuchos, os videogames ganharam mais variedade e complexidade. 
+                Essa evolução também trouxe avanços sonoros, permitindo que os jogos fossem além dos simples efeitos de resposta da geração anterior.
+            </p>
+            <p class="generations-text">
+                O Som da Época: Os consoles passaram a utilizar os primeiros chips de áudio capazes de gerar diferentes tons e canais sonoros. 
+                Com isso, surgiram as primeiras melodias eletrônicas simples, além de efeitos mais variados que ajudavam a criar identidade para os jogos.
+            </p>
+            <p class="generations-text">
+                O Legado: A segunda geração marcou o início da música eletrônica nos videogames. 
+                Seus sons simples e limitados deram os primeiros passos para o chiptune, 
+                que se tornaria um dos estilos mais icônicos da indústria nas gerações seguintes.
+            </p>
+            <p class="generations-text">Consoles Principais:</p>
+            <ul class="console-list">
+                <li>Atari 2600</li>
+                <li>Fairchild Channel F</li>
+                <li>Magnavox Odyssey²</li>
+                <li>Intellivision</li>
+                <li>ColecoVision</li>
+            </ul>
+        </main>
+        <div class="canva-container">
+            <canvas id="spaceCanvas" width="800" height="500"></canvas>
+            <p class="canva-description apenas-computador">Mova o mouse aqui dentro para jogar Space Invaders com áudio clássico!</p>
+            <p class="canva-description apenas-celular">Aperte o dedo na tela para jogar Space Invaders com áudio clássico!</p>
+        </div>
+    </div>
+        <script src="../scripts/space.js"></script>
     <footer>
         <p class = "footer-text">&copy; 2026 Bits & Claves. Todos os direitos reservados.</p>
     </footer>

@@ -135,7 +135,7 @@ main {
   margin-top: 120px; /* Adiciona um espaço superior para separar o contêiner do vídeo do conteúdo acima, criando um layout mais equilibrado e visualmente agradável */
 }
 
-/* Estilos para o canvas do jogo Pong */
+/* Estilos para o canvas do jogo*/
 .canva-container canvas {
   width: 100%; /* Faz o jogo encolher e se adaptar perfeitamente à coluna da direita */
   height: auto; 
@@ -145,7 +145,7 @@ main {
   display: block;
 }
 
-/* Estilos para a descrição do pong*/
+/* Estilos para a descrição do canva*/
 .canva-description {
   text-align: right; /* Alinha o texto da descrição do vídeo à direita para criar um layout mais dinâmico e equilibrado, especialmente quando o vídeo está posicionado à esquerda */
   color: #ffffff; /* Define a cor da descrição do vídeo como branco para garantir boa legibilidade contra o fundo escuro do site */
@@ -218,7 +218,12 @@ footer {
 
 /* Configurações para responsividade em dispositivos móveis */
 @media (max-width: 768px) { /* Aplica estilos para telas com largura máxima de 768px (dispositivos móveis) */
-  .apenas-computador {
+  .year-subtitle {
+    font-size: 0.6em; /* Reduz para 60% do tamanho do título principal */
+    display: block; /* Garante que o subtítulo seja exibido como um bloco separado */
+  }
+
+  .apenas-computador { /* Esconde o texto específico para computador quando a tela for pequena */
       display: none;
   }
 
