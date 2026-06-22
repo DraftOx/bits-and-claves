@@ -217,33 +217,33 @@ main {
     display: block; 
 }
 
-.media-caption {
-    color: #ffffff; 
-    font-size: 11px; 
-    margin-top: 0px;
-    margin-bottom: 0;
-    position: relative; 
-    display: inline-block; 
-    cursor: help; 
+.media-caption { /* Estilos para a legenda das caixas de mídia */
+    color: #ffffff; /* Define a cor da legenda das caixas de mídia como branco para garantir boa legibilidade contra o fundo escuro do site */
+    font-size: 11px; /* Define o tamanho da fonte da legenda das caixas de mídia para um estilo mais discreto */
+    margin-top: 0px; /* Remove a margem superior da legenda das caixas de mídia para criar um layout mais compacto e equilibrado, especialmente em telas menores */
+    margin-bottom: 0; /* Remove a margem inferior da legenda das caixas de mídia para criar um layout mais compacto e equilibrado, especialmente em telas menores */
+    position: relative; /* Define a posição como relativa para que o tooltip possa ser posicionado em relação a ela */
+    display: inline-block; /* Permite que o tooltip seja posicionado corretamente em relação à legenda */
+    cursor: help; /* Altera o cursor para indicar que há mais informações disponíveis ao passar o mouse sobre a legenda */
 }
 
-.tooltip {
-    visibility: hidden; 
-    opacity: 0; 
-    position: absolute;
-    top: 150%; 
-    left: 50%;
-    transform: translateX(-50%); 
-    background-color: #2b2b2b; 
-    color: #ffffff;
-    text-align: left; 
-    padding: 10px;
-    border: 1px solid #ffffff;
-    border-radius: 6px;
-    font-size: 11px;
-    width: 180px; 
+.tooltip { /* Estilos para o tooltip (informações adicionais) */
+    visibility: hidden; /* Esconde o tooltip por padrão */
+    opacity: 0; /* Define a opacidade como 0 para que o tooltip seja invisível */
+    position: absolute; /* Posiciona o tooltip em relação à legenda */
+    top: 150%; /* Posiciona o tooltip abaixo da legenda */
+    left: 50%; /* Centraliza o tooltip horizontalmente em relação à legenda */
+    transform: translateX(-50%); /* Centraliza o tooltip horizontalmente em relação à legenda */
+    background-color: #2b2b2b; /* Cor de fundo do tooltip */
+    color: #ffffff; /* Cor do texto do tooltip */
+    text-align: justify; /* Justifica o texto do tooltip para criar um layout mais limpo e organizado */
+    padding: 10px; /* Adiciona um pouco de padding para criar espaço dentro do tooltip */
+    border: 1px solid #ffffff; /* Adiciona uma borda branca ao redor do tooltip para destacá-lo */
+    border-radius: 6px; /* Adiciona cantos arredondados ao tooltip para um estilo mais moderno */
+    font-size: 11px; /* Define o tamanho da fonte do tooltip para um estilo mais discreto */
+    width: 190px; /* Define uma largura fixa para o tooltip para garantir que ele não fique muito largo e mantenha um layout equilibrado */
     z-index: 9999; /* Forçando prioridade máxima para não esconder atrás de nada */
-    transition: opacity 0.3s ease, visibility 0.3s ease; 
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Adiciona uma transição suave para a opacidade e visibilidade do tooltip ao aparecer e desaparecer */
 }
 
 .tooltip::after {
@@ -311,4 +311,3 @@ footer {
     gap: 24px; /* Reduz o espaço entre os elementos para dispositivos móveis */
   }
 }
-
