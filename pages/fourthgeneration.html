@@ -9,14 +9,16 @@
 <body>
     <header class="site-header">
         <div class="logo-container">
-            <img src="../images/logo.png" alt="Bits & Claves" class="logo-img" id="logo">
+            <a href="../index.html" aria-label="Voltar para a página inicial do Bits e Claves">
+                <img src="../images/logo.png" alt="Logotipo do Bits e Claves" class="logo-img" id="logo">
+            </a>
         </div>
-        <nav class="nav-bar">
+        <nav class="nav-bar" aria-label="Navegação Principal">
             <ul class="nav-content">
                 <li><a href="../index.html">Inicio</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-btn">Gerações <span class="arrow">▼</span></a>
-                <ul class="dropdown-menu">
+                <li class="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a href="#" class="dropdown-btn" aria-label="Menu de gerações de consoles">Gerações <span class="arrow" aria-hidden="true">▼</span></a>
+                <ul class="dropdown-menu" aria-label="Submenu de Gerações">
                     <li><a href="firstgeneration.html">1ª Geração</a></li>
                     <li><a href="secondgeneration.html">2ª Geração</a></li>
                     <li><a href="thirdgeneration.html">3ª Geração</a></li>
@@ -33,7 +35,7 @@
         </nav>
     </header>
     <div class="container-generations">
-        <main>
+        <main id="conteudo-principal">
             <h1 class="title-generations">4ª Geração <span class="year-subtitle">(1987 – 1996)</span></h1>
             <h2 class="subtitle-generations">Os 16 Bits e a Evolução do Som Digital</h2>
             <p class="generations-text">
@@ -61,60 +63,60 @@
         </main>
         <div class="canva-container">
             <div class="media-grid">
-                <div class="media-item">
-                    <video class="media-box" src="../music/fourth/donkey-kong.mp4" controls></video>
-                    <p class="media-caption">
+                <figure class="media-item">
+                    <video class="media-box" src="../music/fourth/donkey-kong.mp4" controls aria-label="Música Aquatic Ambience de Donkey Kong Country"></video>
+                    <figcaption class="media-caption" tabindex="0">
                         Donkey Kong Country (1994)
-                        <span class="tooltip">
+                        <span class="tooltip" role="tooltip">
                             <strong>Música:</strong> Aquatic Ambience<br>
                             <strong>Compositor:</strong> David Wise <br>
                             <strong> Foi uma revolução técnica porque conseguiu contornar as extremas limitações de memória do chip de áudio 
-                                do Super Nintendo (o SPC700, que possuía apenas 64 KB para todos os sons do jogo)</strong>
+                                do Super Nintendo (o SPC700, que possuía apenas 64 KB para todos os sons do jogo).</strong>
                         </span>
-                    </p>
-                </div>
-                <div class="media-item">
-                    <video class="media-box" src="../music/fourth/street-rage.mp4" controls></video>
-                    <p class="media-caption">
+                    </figcaption>
+                </figure>
+                <figure class="media-item">
+                    <video class="media-box" src="../music/fourth/street-rage.mp4" controls aria-label="Música Paranoid de Rock n' Roll Racing"></video>
+                    <figcaption class="media-caption" tabindex="0">
                         Rock n' Roll Racing (1993)
-                        <span class="tooltip">
+                        <span class="tooltip" role="tooltip">
                             <strong>Música:</strong> Paranoid<br>
                             <strong>Compositor:</strong> Tim Follin <br>
                             <strong> Ele foi o primeiro jogo de console a utilizar músicas licenciadas de bandas famosas. Como a tecnologia 
-                                da época não permitia o uso de áudio gravado em estúdio, esses sucessos do rock foram recriados inteiramente 
-                                em chiptune, dando um ritmo alucinante e inesquecível para as corridas.</strong>
+                                da época não permitia o uso de áudio gravado em estúdio, esses sucessos do rock foram recriados, 
+                                dando um ritmo alucinante e inesquecível para as corridas.</strong>
                         </span>
-                    </p>
-                </div>
-                <div class="media-item">
-                    <video class="media-box" src="../music/fourth/chrono.mp4" controls></video>
-                    <p class="media-caption">
+                    </figcaption>
+                </figure>
+                <figure class="media-item">
+                    <video class="media-box" src="../music/fourth/chrono.mp4" controls aria-label="Música Corridors of Time de Chrono Trigger"></video>
+                    <figcaption class="media-caption" tabindex="0">
                         Chrono Trigger (1995) 
-                        <span class="tooltip">
+                        <span class="tooltip" role="tooltip">
                             <strong>Música:</strong> Corridors of Time<br>
                             <strong>Compositor:</strong> Yasunori Mitsuda <br>
-                            <strong> A trilha sonora de Chrono Trigger é um marco por mesclar aventura e rock progressivo em 8-bits, 
-                                criando uma atmosfera de tensão e emoção inconfundível para a época.</strong>
+                            <strong> A trilha sonora de Chrono Trigger é um marco dos 16-bits no Super Nintendo, 
+                                misturando instrumentos orquestrais, folclóricos e sintetizadores para criar uma jornada temporal inesquecível.</strong>
                         </span>
-                    </p>
-                </div>
-                <div class="media-item">
-                    <video class="media-box" src="../music/fourth/sonic.mp4" controls></video>
-                    <p class="media-caption">
+                    </figcaption>
+                </figure>
+                <figure class="media-item">
+                    <video class="media-box" src="../music/fourth/sonic.mp4" controls aria-label="Música Green Hill Zone de Sonic the Hedgehog"></video>
+                    <figcaption class="media-caption" tabindex="0">
                         Sonic the Hedgehog (1991)
-                        <span class="tooltip">
+                        <span class="tooltip" role="tooltip">
                             <strong>Música:</strong> Green Hill Zone<br>
-                            <strong>Compositor:</strong> Naoto Kubo<br>
-                            <strong> A trilha sonora de Sonic the Hedgehog é uma obra-prima do chiptune. 
-                                Músicas como o tema do Green Hill Zone elevaram o som 8-bits a um novo patamar de complexidade e intensidade</strong>
+                            <strong>Compositor:</strong> Masato Nakamura<br>
+                            <strong> A trilha sonora de Sonic, composta por Masato Nakamura da banda Dreams Come True, 
+                                definiu o som do Mega Drive com suas batidas pop e uso magistral da Síntese FM em 16-bits.</strong>
                         </span>
-                    </p>
-                </div>
+                    </figcaption>
+                </figure>
             </div>
         </div>
     </div>
     <footer>
-        <p class = "footer-text">&copy; 2026 Bits & Claves. Todos os direitos reservados.</p>
+        <p class="footer-text">&copy; 2026 Bits & Claves. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>

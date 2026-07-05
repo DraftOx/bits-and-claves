@@ -9,14 +9,16 @@
 <body>
     <header class="site-header">
         <div class="logo-container">
-            <img src="../images/logo.png" alt="Bits & Claves" class="logo-img" id="logo">
+            <a href="../index.html" aria-label="Voltar para a página inicial do Bits e Claves">
+                <img src="../images/logo.png" alt="Logotipo do Bits e Claves" class="logo-img" id="logo">
+            </a>
         </div>
-        <nav class="nav-bar">
+        <nav class="nav-bar" aria-label="Navegação Principal">
             <ul class="nav-content">
                 <li><a href="../index.html">Inicio</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-btn">Gerações <span class="arrow">▼</span></a>
-                <ul class="dropdown-menu">
+                <li class="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a href="#" class="dropdown-btn" aria-label="Menu de gerações de consoles">Gerações <span class="arrow" aria-hidden="true">▼</span></a>
+                <ul class="dropdown-menu" aria-label="Submenu de Gerações">
                     <li><a href="firstgeneration.html">1ª Geração</a></li>
                     <li><a href="secondgeneration.html">2ª Geração</a></li>
                     <li><a href="thirdgeneration.html">3ª Geração</a></li>
@@ -33,7 +35,7 @@
         </nav>
     </header>
     <div class="container-generations">
-        <main>
+        <main id="conteudo-principal">
             <h1 class="title-generations">2ª Geração <span class="year-subtitle">(1976 – 1983)</span></h1>
             <h2 class="subtitle-generations">O Surgimento dos Chips de Áudio e das Primeiras Melodias</h2>
             <p class="generations-text">
@@ -59,16 +61,19 @@
                 <li>Intellivision</li>
                 <li>ColecoVision</li>
             </ul>
-        </main>
+        </main>       
         <div class="canva-container">
-            <canvas id="spaceCanvas" width="800" height="500"></canvas>
+            <canvas id="spaceCanvas" width="800" height="500" role="img" aria-label="Simulador jogável inspirado em Space Invaders, com uma nave na base atirando em alienígenas que descem pela tela."></canvas>
             <p class="canva-description apenas-computador">Mova o mouse aqui dentro para jogar Space Invaders com áudio clássico!</p>
             <p class="canva-description apenas-celular">Aperte o dedo na tela para jogar Space Invaders com áudio clássico!</p>
+            <div class="acessibilidade-nota">
+                <p><strong>🎧 Descrição Sonora (Acessibilidade):</strong> Para quem utiliza navegação assistida, a experiência sonora de Space Invaders foi revolucionária por criar tensão psicológica. A "música" de fundo é composta por um loop de quatro notas graves de baixo sintético que acelera progressivamente conforme os inimigos se aproximam da base. Os efeitos sonoros incluem estalos agudos para os tiros do jogador e ruídos de estática pixelizada quando um alienígena é destruído.</p>
+            </div>
         </div>
     </div>
         <script src="../scripts/space.js"></script>
     <footer>
-        <p class = "footer-text">&copy; 2026 Bits & Claves. Todos os direitos reservados.</p>
+        <p class="footer-text">&copy; 2026 Bits & Claves. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>

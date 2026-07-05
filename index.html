@@ -9,14 +9,16 @@
 <body>
     <header class="site-header">
         <div class="logo-container">
-            <img src="images/logo.png" alt="Bits & Claves" class="logo-img" id="logo">
+            <a href="index.html" aria-label="Voltar para a página inicial do Bits e Claves">
+                <img src="images/logo.png" alt="Logotipo do Bits e Claves: Letras em estilo pixel art e uma Clave de Sol estilizada" class="logo-img" id="logo">
+            </a>
         </div>
-        <nav class="nav-bar">
+        <nav class="nav-bar" aria-label="Navegação Principal">
             <ul class="nav-content">
                 <li><a href="index.html">Inicio</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-btn">Gerações <span class="arrow">▼</span></a>
-                <ul class="dropdown-menu">
+                <li class="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a href="#" class="dropdown-btn" aria-label="Menu de gerações de consoles">Gerações <span class="arrow" aria-hidden="true">▼</span></a>
+                <ul class="dropdown-menu" aria-label="Submenu de Gerações">
                     <li><a href="pages/firstgeneration.html">1ª Geração</a></li>
                     <li><a href="pages/secondgeneration.html">2ª Geração</a></li>
                     <li><a href="pages/thirdgeneration.html">3ª Geração</a></li>
@@ -33,7 +35,7 @@
         </nav>
     </header>
         <div class="container-principal">
-            <main>
+            <main id="conteudo-principal">
                 <h1 class="title-homepage">Bits & Claves</h1>
                 <h2 class="subtitle-homepage">A Trilha Sonora da Nossa História</h2>
                 <p class="homepage-text">   Você se lembra da primeira música de videogame que ficou grudada na sua cabeça?
@@ -46,16 +48,16 @@
                 embalaram nossas aventuras e redescobrir as trilhas que marcaram as nossas vidas. Aperte o Play e
                 venha ouvir a história dos videogames!</p>
             </main>
-            <div class="video-container">
-                <video controls width="100%" preload="auto">
+            <figure class="video-container">
+                <video controls width="100%" preload="auto" aria-label="Apresentação musical com o tema principal do jogo The Legend of Zelda: Ocarina of Time">
                     <source src="video/main_video.mp4" type="video/mp4">
                     Seu navegador não suporta esse tipo de video
                 </video>
-                <p class="video-description">The Legend of Zelda: Ocarina of Time - Main Theme</p>
-            </div>
+                <figcaption class="video-description" aria-hidden="true">The Legend of Zelda: Ocarina of Time - Main Theme</figcaption>
+            </figure>
         </div>
     <footer>
-        <p class = "footer-text">&copy; 2026 Bits & Claves. Todos os direitos reservados.</p>
+        <p class="footer-text">&copy; 2026 Bits & Claves. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>

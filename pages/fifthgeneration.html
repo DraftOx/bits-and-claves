@@ -9,14 +9,16 @@
 <body>
     <header class="site-header">
         <div class="logo-container">
-            <img src="../images/logo.png" alt="Bits & Claves" class="logo-img" id="logo">
+            <a href="../index.html" aria-label="Voltar para a página inicial do Bits e Claves">
+                <img src="../images/logo.png" alt="Logotipo do Bits e Claves" class="logo-img" id="logo">
+            </a>
         </div>
-        <nav class="nav-bar">
+        <nav class="nav-bar" aria-label="Navegação Principal">
             <ul class="nav-content">
                 <li><a href="../index.html">Inicio</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-btn">Gerações <span class="arrow">▼</span></a>
-                <ul class="dropdown-menu">
+                <li class="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a href="#" class="dropdown-btn" aria-label="Menu de gerações de consoles">Gerações <span class="arrow" aria-hidden="true">▼</span></a>
+                <ul class="dropdown-menu" aria-label="Submenu de Gerações">
                     <li><a href="firstgeneration.html">1ª Geração</a></li>
                     <li><a href="secondgeneration.html">2ª Geração</a></li>
                     <li><a href="thirdgeneration.html">3ª Geração</a></li>
@@ -33,7 +35,7 @@
         </nav>
     </header>
     <div class="container-generations">
-        <main>
+        <main id="conteudo-principal">
             <h1 class="title-generations">5ª Geração <span class="year-subtitle">(1993 – 2002)</span></h1>
             <h2 class="subtitle-generations">A Revolução do Áudio em CD e a Chegada do Som Digital</h2>
             <p class="generations-text">
@@ -62,62 +64,62 @@
         </main>
         <div class="canva-container">
             <div class="media-grid">
-                <div class="media-item">
-                    <video class="media-box" src="../music/fifth/castlevania.mp4" controls></video>
-                    <p class="media-caption">
+                <figure class="media-item">
+                    <video class="media-box" src="../music/fifth/castlevania.mp4" controls aria-label="Música The Tragic Prince de Castlevania: Symphony of the Night"></video>
+                    <figcaption class="media-caption" tabindex="0">
                         Castlevania: Symphony of the Night (1997)
-                        <span class="tooltip">
+                        <span class="tooltip" role="tooltip">
                             <strong>Música:</strong> The Tragic Prince<br>
                             <strong>Compositor:</strong> Michiru Yamane<br>
                             <strong>é um rock instrumental com guitarras pesadas que toca na área da Torre do Relógio. 
                                 Ela passa uma sensação de urgência e ação incrível para o jogo.</strong>
                         </span>
-                    </p>
-                </div>
-                <div class="media-item">
-                    <video class="media-box" src="../music/fifth/final-fantasy-vii.mp4" controls></video>
-                    <p class="media-caption">
+                    </figcaption>
+                </figure>                
+                <figure class="media-item">
+                    <video class="media-box" src="../music/fifth/final-fantasy-vii.mp4" controls aria-label="Música Aerith's Theme de Final Fantasy VII"></video>
+                    <figcaption class="media-caption" tabindex="0">
                         Final Fantasy VII (1997)
-                        <span class="tooltip">
+                        <span class="tooltip" role="tooltip">
                             <strong>Música:</strong> Aerith's Theme<br>
                             <strong>Compositor:</strong> Nobuo Uematsu<br>
                             <strong>Considerada uma das músicas mais emocionantes da história dos videogames, ela toca 
                                 em momentos chave da personagem Aerith. A melodia suave de piano e orquestra cria uma 
                                 atmosfera profunda e melancólica que marcou para sempre o coração dos jogadores.</strong>
                         </span>
-                    </p>
-                </div>
-                <div class="media-item">
-                    <video class="media-box" src="../music/fifth/wipeout.mp4" controls></video>
-                    <p class="media-caption">
+                    </figcaption>
+                </figure>                
+                <figure class="media-item">
+                    <video class="media-box" src="../music/fifth/wipeout.mp4" controls aria-label="Música Chemical Beats de Wipeout"></video>
+                    <figcaption class="media-caption" tabindex="0">
                         Wipeout (1995) 
-                        <span class="tooltip">
+                        <span class="tooltip" role="tooltip">
                             <strong>Música:</strong> Chemical Beats<br>
                             <strong>Compositor:</strong> The Chemical Brothers<br>
                             <strong>Aproveitando a capacidade dos CDs, o jogo foi pioneiro em trazer gravações reais de estúdio 
                                 da cena eletrônica. O detalhe mais marcante é que a trilha era tão fiel que você podia simplesmente 
                                 colocar o disco do jogo em um aparelho de som comum para escutar as músicas.</strong>
                         </span>
-                    </p>
-                </div>
-                <div class="media-item">
-                    <video class="media-box" src="../music/fifth/ocarina-of-time.mp4" controls></video>
-                    <p class="media-caption">
+                    </figcaption>
+                </figure>                
+                <figure class="media-item">
+                    <video class="media-box" src="../music/fifth/ocarina-of-time.mp4" controls aria-label="Música Song of Time de The Legend of Zelda: Ocarina of Time"></video>
+                    <figcaption class="media-caption" tabindex="0">
                         The Legend of Zelda: Ocarina of Time (1998)
-                        <span class="tooltip">
+                        <span class="tooltip" role="tooltip">
                             <strong>Música:</strong> Song of Time<br>
                             <strong>Compositor:</strong> Koji Kondo<br>
                             <strong>Com uma melodia solene que remete a cantos gregorianos, ela não é apenas uma música, mas a 
                                 chave mágica que abre a Porta do Tempo. O jogador precisa tocá-la na ocarina para viajar entre 
                                 as eras, tornando a composição um dos elementos mais interativos e marcantes da história do jogo.</strong>
                         </span>
-                    </p>
-                </div>
+                    </figcaption>
+                </figure>
             </div>
         </div>
     </div>
     <footer>
-        <p class = "footer-text">&copy; 2026 Bits & Claves. Todos os direitos reservados.</p>
+        <p class="footer-text">&copy; 2026 Bits & Claves. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>

@@ -1,249 +1,253 @@
 /* Reset para remover margens */
 * { 
-    margin: 0; /* Remove as margens padrão de todos os elementos */
-    padding: 0; /* Remove o padding padrão de todos os elementos */
-    box-sizing: border-box; /* Faz com que o padding e a borda sejam incluídos no tamanho total do elemento */
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
 }
 
 /* Estilos para o corpo do site */
 body {
-    font-family: Arial, sans-serif; /* Define o estilo da fonte para o corpo do site */
-    background-color: #1e1e1e; /* Define a cor de fundo do site */
-    margin: 0; /* Remove a margem padrão do corpo */
-    display: flex; /* Usa Flexbox para organizar o layout */
-    flex-direction: column; /* Organiza os elementos em uma coluna */
-    min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura total da janela */
+    font-family: Arial, sans-serif; 
+    background-color: #1e1e1e; 
+    margin: 0; 
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
 }
+
 /* Estilos para o cabeçalho do site */
 .site-header {
-  background-color: #1e1e1e; /* Cor de fundo do cabeçalho */
-  width: 100%; /* Garante que o cabeçalho ocupe toda a largura da página */
-  display: flex; /* Usa Flexbox para organizar o layout do cabeçalho */
-  flex-direction: column; /* Organiza os elementos do cabeçalho em uma coluna */
-  align-items: center; /* Centraliza os itens horizontalmente */
+  background-color: #1e1e1e; 
+  width: 100%; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
 }
 
 /* Estilos para o logo */
 .logo-container { 
-  padding: 25px 0; /* O padding vertical foi movido para cá para criar um espaço maior entre o logo e a barra de navegação */
+  padding: 25px 0; 
 }
 
 /* Estilos para a imagem do logo */ 
 .logo-img { 
-  max-height: 20vh; display: block; /* Garante que a imagem do logo seja responsiva e não ultrapasse 17% da altura da janela */
+  max-height: 20vh; 
+  display: block; 
 }
 
 /* Estilos para a barra de navegação */
 .nav-bar {
-  width: 100%; /* Garante que a barra de navegação ocupe toda a largura da página */
-  background-color: #1e1e1e; /* Cor de fundo da barra de navegação */
-  border-top: 1px solid #ffffff; /* Adiciona uma borda superior branca para destacar a barra de navegação */
-  border-bottom: 1px solid #ffffff; /* Adiciona uma borda inferior branca para destacar a barra de navegação */
+  width: 100%; 
+  background-color: #1e1e1e; 
+  border-top: 1px solid #ffffff; 
+  border-bottom: 1px solid #ffffff; 
 }
 
 /* Estilos para o conteúdo da barra de navegação */
 .nav-content {
-  list-style: none; /* Remove os marcadores da lista */
-  max-width: 1200px; /* Define uma largura máxima para o conteúdo da barra de navegação */
-  margin: 0 auto; /* Centraliza o conteúdo da barra de navegação */
-  padding: 12px 20px; /* Adiciona um pouco de padding para criar espaço dentro da barra de navegação */
-  display: flex; /* Usa Flexbox para organizar os itens da barra de navegação */
-  align-items: center; /* Alinha os itens verticalmente ao centro */
+  list-style: none; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 12px 20px; 
+  display: flex; 
+  align-items: center; 
 }
 
 /* Adiciona o separador "|" entre os itens, exceto o último */
-.nav-content > li:not(:last-child)::after { /* Seleciona todos os itens da lista, exceto o último, e adiciona um conteúdo após eles */
-  content: "|"; /* Define o conteúdo do separador como "|" */
-  color: #ffffff; /* Define a cor do separador como branco */
-  margin: 0 15px; /* Adiciona uma margem horizontal de 15px para criar espaço entre o item e o separador */
-  font-weight: 300; /* Define o peso da fonte do separador para um estilo mais leve */
+.nav-content > li:not(:last-child)::after { 
+  content: "|"; 
+  color: #ffffff; 
+  margin: 0 15px; 
+  font-weight: 300; 
 }
 
 /* Estilos para os links dentro da barra de navegação */
 .nav-content a {
-  color: #ffffff; /* Define a cor dos links como branco */
-  text-decoration: none; /* Remove o sublinhado dos links */
-  font-size: 16px; /* Define o tamanho da fonte dos links */
+  color: #ffffff; 
+  text-decoration: none; 
+  font-size: 16px; 
 }
 
 /* Diz para o sub-menu se alinhar baseado neste item */
 .dropdown {
-  position: relative; /* Define o item pai como relativo para que o menu suspenso possa ser posicionado em relação a ele */
+  position: relative; 
 }
+
 /* Estilização do botão que ativa o menu suspenso */
 .arrow {
-  font-size: 10px; /* Define o tamanho da fonte da seta para um estilo mais discreto */
-  margin-left: 5px; /* Adiciona uma margem à esquerda da seta para criar um pequeno espaço entre o texto do item e a seta */
+  font-size: 10px; 
+  margin-left: 5px; 
 }
+
 /* Estilização do Menu Oculto */
 .dropdown-menu {
-  display: none; /* Esconde o menu por padrão */
-  position: absolute; /* Posiciona o menu em relação ao item pai */
-  top: 100%; /* Posiciona o menu logo abaixo do item pai */
-  left: 0; /* Alinha o menu à esquerda do item pai */
-  background-color: #1e1e1e; /* Cor de fundo do menu suspenso */
-  border: 1px solid #ffffff; /* Adiciona uma borda branca ao redor do menu suspenso */
-  list-style: none; /* Remove os marcadores da lista do menu suspenso */
-  min-width: 180px; /* Define uma largura mínima para o menu suspenso */
-  margin-top: 13px; /* Cria um espaço entre o item pai e o menu suspenso */
-  z-index: 10; /* Garante que o menu suspenso fique acima de outros elementos da página */
+  display: none; 
+  position: absolute; 
+  top: 100%; 
+  left: 0; 
+  background-color: #1e1e1e; 
+  border: 1px solid #ffffff; 
+  list-style: none; 
+  min-width: 180px; 
+  margin-top: 13px; 
+  z-index: 10; 
 }
 
 /* Estilização dos itens dentro do menu suspenso */
 .dropdown-menu li {
-  width: 100%; /* Garante que cada item do menu suspenso ocupe toda a largura do menu */
+  width: 100%; 
 }
 
 /* Estilização dos links dentro do menu suspenso */
 .dropdown-menu li a {
-  display: block; /* Faz com que o link ocupe toda a área do item para facilitar o clique */
-  padding: 10px 15px; /* Adiciona um pouco de padding para criar espaço dentro dos itens do menu suspenso */
-  font-size: 14px; /* Define o tamanho da fonte dos itens do menu suspenso */
-  white-space: nowrap; /* Impede o texto de quebrar linha */
+  display: block; 
+  padding: 10px 15px; 
+  font-size: 14px; 
+  white-space: nowrap; 
 }
 
 /* Efeito de destaque para os itens do menu suspenso */
 .dropdown-menu li a:hover { 
-  background-color: #2b2b2b; /* Altera a cor de fundo do item quando o mouse estiver sobre ele para criar um efeito de destaque */
+  background-color: #2b2b2b; 
 }
 
 /* Exibe o menu suspenso quando o mouse estiver sobre o item pai */
 .dropdown:hover .dropdown-menu {
-  display: block; /* Exibe o menu suspenso quando o mouse estiver sobre o item pai */
+  display: block; 
 }
 
-/* Criação de uma ponte invisível para evitar que o menu desapareça ao mover o mouse entre o item pai e o menu suspenso */
+/* Criação de uma ponte invisível para evitar que o menu desapareça ao mover o mouse */
 .dropdown-menu::before {
-  content: ""; /* Cria um elemento vazio para servir como ponte invisível */
-  position: absolute; /* Posiciona a ponte em relação ao menu suspenso */
-  top: -15px; /* Posiciona a ponte acima do menu suspenso para cobrir o espaço entre o item pai e o menu */
-  left: 0; /* Alinha a ponte à esquerda do menu suspenso */
-  width: 100%; /* Garante que a ponte ocupe toda a largura do menu suspenso */
-  height: 15px; /* Define a altura da ponte para cobrir o espaço entre o item pai e o menu suspenso */
-  background: transparent; /* Torna a ponte invisível */
+  content: ""; 
+  position: absolute; 
+  top: -15px; 
+  left: 0; 
+  width: 100%; 
+  height: 15px; 
+  background: transparent; 
 }
 
 /* Estilos para o conteúdo principal do site */
 main {
-    flex: 1; /* Faz o main ocupar o espaço restante */
+    flex: 1; 
 }   
 
 /* Estilos para o contêiner do canva */
 .canva-container {
-  flex: 1; /* Permite que o contêiner do vídeo ocupe o espaço disponível, tornando-o flexível e adaptável a diferentes tamanhos de tela, garantindo que o layout seja responsivo e equilibrado */
-  max-width: 500px; /* Define uma largura máxima para o contêiner do vídeo para evitar que ele fique muito grande em telas maiores, garantindo que o layout permaneça equilibrado e visualmente agradável */
-  margin-top: 120px; /* Adiciona um espaço superior para separar o contêiner do vídeo do conteúdo acima, criando um layout mais equilibrado e visualmente agradável */
+  flex: 1; 
+  max-width: 500px; 
+  margin-top: 120px; 
 }
 
 /* Estilos para o canvas do jogo*/
 .canva-container canvas {
-  width: 100%; /* Faz o jogo encolher e se adaptar perfeitamente à coluna da direita */
+  width: 100%; 
   height: auto; 
-  border-radius: 8px; /* Mantém o padrão visual moderno do seu site */
-  background-color: #000000; /* Garante fundo preto para a tela do jogo */
-  border: 2px solid #ffffff; /* Dá um destaque legal imitando uma TV antiga de tubo */
+  border-radius: 8px; 
+  background-color: #000000; 
+  border: 2px solid #ffffff; 
   display: block;
 }
 
 /* Estilos para a descrição do canva*/
 .canva-description {
-  text-align: right; /* Alinha o texto da descrição do vídeo à direita para criar um layout mais dinâmico e equilibrado, especialmente quando o vídeo está posicionado à esquerda */
-  color: #ffffff; /* Define a cor da descrição do vídeo como branco para garantir boa legibilidade contra o fundo escuro do site */
-  font-size: 11px; /* Define o tamanho da fonte da descrição do vídeo para um estilo mais discreto */
+  text-align: right; 
+  color: #ffffff; 
+  font-size: 11px; 
 }
 
 /* Estilos para o contêiner das gerações de consoles */
 .container-generations {
-  display: flex; /* Usa Flexbox para organizar o layout do contêiner das gerações de consoles */
-  align-items: flex-start; /* Alinha os itens ao início do contêiner para criar um layout mais dinâmico e equilibrado, especialmente em telas maiores */
-  justify-content: space-between; /* Alinha os itens ao centro verticalmente e distribui o espaço entre eles para criar um layout equilibrado, especialmente em telas maiores */
-  gap: 40px; /* Adiciona um espaço de 40px entre os elementos dentro do contêiner das gerações de consoles para criar um layout mais equilibrado e visualmente agradável, especialmente em telas maiores */
-  padding: 20px; /* Adiciona um pouco de padding para criar espaço dentro do contêiner das gerações de consoles, garantindo que o conteúdo não fique colado nas bordas e proporcionando um layout mais equilibrado e visualmente agradável */
-  max-width: 1200px; /* Define uma largura máxima para o contêiner das gerações de consoles para evitar que ele fique muito largo em telas maiores, garantindo que o layout permaneça equilibrado e visualmente agradável */
-  margin: 0 auto; /* Centraliza o contêiner das gerações de consoles horizontalmente na página, garantindo que o layout seja equilibrado e visualmente agradável, especialmente em telas maiores */
+  display: flex; 
+  align-items: flex-start; 
+  justify-content: space-between; 
+  gap: 40px; 
+  padding: 20px; 
+  max-width: 1200px; 
+  margin: 0 auto; 
 }
 
 /* Estilos para o título da seção de gerações de consoles */
 .title-generations {
-  color: #ffffff; /* Define a cor do título da seção de gerações de consoles como branco para garantir boa legibilidade contra o fundo escuro do site */
-  text-align: center; /* Centraliza o texto do título da seção de gerações de consoles para criar um layout mais equilibrado e atraente */
-  margin-top: 0px; /* Remove a margem superior do título da seção de gerações de consoles para criar um layout mais compacto e equilibrado, especialmente em telas menores */
+  color: #ffffff; 
+  text-align: center; 
+  margin-top: 0px; 
 }
 
 /* Estilos para o subtítulo da seção de gerações de consoles */
 .subtitle-generations {
-  color: #ffffff; /* Define a cor do subtítulo da seção de gerações de consoles como branco */
-  text-align: center; /* Centraliza o texto do subtítulo da seção de gerações de consoles para criar um layout mais equilibrado */
-  margin-top: 10px; /* Adiciona um espaço superior para separar o subtítulo do título principal da seção de gerações de consoles */
-  margin-bottom: 40px; /* Adiciona um espaço inferior para separar o subtítulo do conteúdo principal da seção de gerações de consoles */
+  color: #ffffff; 
+  text-align: center; 
+  margin-top: 10px; 
+  margin-bottom: 40px; 
 }
 
 /* Estilos para o texto da seção de gerações de consoles */
 .generations-text {
-  color: #ffffff; /* Define a cor do texto da seção de gerações de consoles como branco */
-  text-indent: 1em; /* Adiciona um recuo na primeira linha do parágrafo para melhorar a legibilidade */
-  text-align: justify; /* Justifica o texto para criar um layout mais limpo e organizado */
-  font-size: 18px; /* Define o tamanho da fonte do texto da seção de gerações de consoles para um estilo mais legível */
-  line-height: 1.3; /* Define a altura da linha para melhorar a legibilidade do texto da seção de gerações de consoles */
-  padding-bottom: 1em; /* Adiciona um espaço inferior para separar os parágrafos do texto da seção de gerações de consoles, criando um layout mais equilibrado e visualmente agradável */
+  color: #f0f0f0; /* Ajuste visual de acessibilidade */
+  text-indent: 1em; 
+  text-align: justify; 
+  font-size: 18px; 
+  line-height: 1.3; 
+  padding-bottom: 1em; 
 }
 
 /* Estilos para a lista de consoles */
 .console-list {
-  color: #ffffff; /* Define a cor do texto da lista de consoles como branco */
-  text-align: justify; /* Justifica o texto da lista de consoles para criar um layout mais limpo e organizado */
-  padding-left: 3em; /* Adiciona um recuo à esquerda para criar um layout mais organizado e visualmente agradável para a lista de consoles */
-  padding-bottom: 1em; /* Adiciona um espaço inferior para separar os itens da lista de consoles, criando um layout mais equilibrado e visualmente agradável */
+  color: #f0f0f0; /* Ajuste visual de acessibilidade */
+  text-align: justify; 
+  padding-left: 3em; 
+  padding-bottom: 1em; 
 }
 
 /* Estilos para a grade de 4 caixas */
 .media-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Cria exatamente 2 colunas do mesmo tamanho */
-    gap: 20px; /* Espaçamento entre as caixas */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
     width: 100%;
 }
 
 .media-item {
-    text-align: right; /* Alinha o texto da legenda à direita para criar um layout mais dinâmico e equilibrado, especialmente quando as caixas estão posicionadas à esquerda */
+    text-align: right; 
 }
 
 .media-box {
     width: 100%;
-    aspect-ratio: 4 / 3; /* Mantém as caixas em um formato retangular (padrão de TVs antigas) */
+    aspect-ratio: 4 / 3; 
     background-color: #000000;
-    border: 1px solid #ffffff; /* Borda fina branca, como na imagem */
-    border-radius: 4px; /* Canto levemente arredondado */
+    border: 1px solid #ffffff; 
+    border-radius: 4px; 
     display: block; 
 }
 
-.media-caption { /* Estilos para a legenda das caixas de mídia */
-    color: #ffffff; /* Define a cor da legenda das caixas de mídia como branco para garantir boa legibilidade contra o fundo escuro do site */
-    font-size: 11px; /* Define o tamanho da fonte da legenda das caixas de mídia para um estilo mais discreto */
-    margin-top: 0px; /* Remove a margem superior da legenda das caixas de mídia para criar um layout mais compacto e equilibrado, especialmente em telas menores */
-    margin-bottom: 0; /* Remove a margem inferior da legenda das caixas de mídia para criar um layout mais compacto e equilibrado, especialmente em telas menores */
-    position: relative; /* Define a posição como relativa para que o tooltip possa ser posicionado em relação a ela */
-    display: inline-block; /* Permite que o tooltip seja posicionado corretamente em relação à legenda */
-    cursor: help; /* Altera o cursor para indicar que há mais informações disponíveis ao passar o mouse sobre a legenda */
+.media-caption { 
+    color: #ffffff; 
+    font-size: 11px; 
+    margin-top: 0px; 
+    margin-bottom: 0; 
+    position: relative; 
+    display: inline-block; 
+    cursor: help; 
 }
 
-.tooltip { /* Estilos para o tooltip (informações adicionais) */
-    visibility: hidden; /* Esconde o tooltip por padrão */
-    opacity: 0; /* Define a opacidade como 0 para que o tooltip seja invisível */
-    position: absolute; /* Posiciona o tooltip em relação à legenda */
-    top: 150%; /* Posiciona o tooltip abaixo da legenda */
-    left: 50%; /* Centraliza o tooltip horizontalmente em relação à legenda */
-    transform: translateX(-50%); /* Centraliza o tooltip horizontalmente em relação à legenda */
-    background-color: #2b2b2b; /* Cor de fundo do tooltip */
-    color: #ffffff; /* Cor do texto do tooltip */
-    text-align: justify; /* Justifica o texto do tooltip para criar um layout mais limpo e organizado */
-    padding: 10px; /* Adiciona um pouco de padding para criar espaço dentro do tooltip */
-    border: 1px solid #ffffff; /* Adiciona uma borda branca ao redor do tooltip para destacá-lo */
-    border-radius: 6px; /* Adiciona cantos arredondados ao tooltip para um estilo mais moderno */
-    font-size: 11px; /* Define o tamanho da fonte do tooltip para um estilo mais discreto */
-    width: 190px; /* Define uma largura fixa para o tooltip para garantir que ele não fique muito largo e mantenha um layout equilibrado */
-    z-index: 9999; /* Forçando prioridade máxima para não esconder atrás de nada */
-    transition: opacity 0.3s ease, visibility 0.3s ease; /* Adiciona uma transição suave para a opacidade e visibilidade do tooltip ao aparecer e desaparecer */
+.tooltip { 
+    visibility: hidden; 
+    opacity: 0; 
+    position: absolute; 
+    top: 150%; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: #2b2b2b; 
+    color: #ffffff; 
+    text-align: justify; 
+    padding: 10px; 
+    border: 1px solid #ffffff; 
+    border-radius: 6px; 
+    font-size: 11px; 
+    width: 190px; 
+    z-index: 9999; 
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
 }
 
 .tooltip::after {
@@ -264,17 +268,17 @@ main {
 
 /* Estilos para o rodapé do site */
 footer {
-    margin-top: auto; /* Esse é o segredo! Empurra o rodapé para o final do espaço disponível */
-    width: 100%; /* Garante que ele ocupe toda a largura da tela */
-    background-color: #1e1e1e; /* Mantém a cor de fundo padrão do seu site */
+    margin-top: auto; 
+    width: 100%; 
+    background-color: #1e1e1e; 
 }
 
 /* Estilos para o texto do rodapé */
 .footer-text {
-    color: #ffffff; /* Define a cor do texto do rodapé como branco */
-    font-size: 12px; /* Define o tamanho da fonte do texto do rodapé */
-    text-align: center; /* Centraliza o texto do rodapé */
-    padding: 20px 0; /* Adiciona um pouco de padding para criar espaço dentro do rodapé */
+    color: #ffffff; 
+    font-size: 12px; 
+    text-align: center; 
+    padding: 20px 0; 
 }
 
 /* Esconde o texto do celular por padrão */
@@ -283,31 +287,84 @@ footer {
 }
 
 /* Configurações para responsividade em dispositivos móveis */
-@media (max-width: 768px) { /* Aplica estilos para telas com largura máxima de 768px (dispositivos móveis) */
+@media (max-width: 768px) { 
   .year-subtitle {
-    font-size: 0.6em; /* Reduz para 60% do tamanho do título principal */
-    display: block; /* Garante que o subtítulo seja exibido como um bloco separado */
+    font-size: 0.6em; 
+    display: block; 
   }
 
-  .apenas-computador { /* Esconde o texto específico para computador quando a tela for pequena */
+  .apenas-computador { 
       display: none;
   }
 
   .apenas-celular { 
-      display: block; /* Exibe o texto específico para celular quando a tela for pequena */
+      display: block; 
   }
   
   .canva-container {
-    max-width: 100%; /* Garante que o canvas ocupe toda a largura disponível em dispositivos móveis */
+    max-width: 100%; 
+    margin-top: 10px; 
   }
 
   .title-homepage {
-    margin-top: 20px; /* Remove o -80px e cria um respiro normal no celular */
+    margin-top: 20px; 
   }
 
   .container-generations {
-    flex-direction: column; /* Organiza os elementos em uma coluna para dispositivos móveis */
-    text-align: center; /* Centraliza o texto para dispositivos móveis */
-    gap: 24px; /* Reduz o espaço entre os elementos para dispositivos móveis */
+    flex-direction: column; 
+    text-align: center; 
+    gap: 24px; 
   }
+}
+
+/* Acessibilidade Motora: Foco visível para navegação por teclado (Tecla TAB) */
+a:focus, .dropdown-btn:focus, canvas:focus {
+    outline: 3px solid #f39c12; 
+    outline-offset: 4px; 
+    border-radius: 2px;
+}
+
+/* Remover o contorno extra quando o clique for por mouse */
+a:focus:not(:focus-visible), .dropdown-btn:focus:not(:focus-visible), canvas:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* Garante que o menu abra ao focar no botão pai ou ao focar nos links internos */
+.dropdown:focus-within .dropdown-menu {
+    display: block;
+}
+
+/* Destaque visual nos links de dentro do menu para o teclado */
+.dropdown-menu a:focus {
+    outline: 2px solid #f39c12;
+    background-color: #2b2b2b;
+}
+
+/* Estilo para a caixa de descrição sonora para acessibilidade no Canvas */
+.acessibilidade-nota {
+    margin-top: 20px;
+    padding: 15px;
+    border-left: 4px solid #f39c12; 
+    background-color: #2b2b2b; 
+    border-radius: 0 4px 4px 0;
+}
+
+.acessibilidade-nota p {
+    color: #e0e0e0;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* Cria o contorno visual quando a legenda recebe o foco do teclado (Tab) */
+.media-caption:focus {
+    outline: 2px solid #f39c12;
+    border-radius: 4px;
+    padding: 2px; /* Dá um respiro pro contorno */
+}
+
+/* Faz o balãozinho (tooltip) aparecer quando a legenda está focada pelo teclado! */
+.media-caption:focus .tooltip {
+    visibility: visible;
+    opacity: 1;
 }

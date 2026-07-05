@@ -9,14 +9,16 @@
 <body>
     <header class="site-header">
         <div class="logo-container">
-            <img src="../images/logo.png" alt="Bits & Claves" class="logo-img" id="logo">
+            <a href="../index.html" aria-label="Voltar para a página inicial do Bits e Claves">
+                <img src="../images/logo.png" alt="Logotipo do Bits e Claves" class="logo-img" id="logo">
+            </a>
         </div>
-        <nav class="nav-bar">
+        <nav class="nav-bar" aria-label="Navegação Principal">
             <ul class="nav-content">
                 <li><a href="../index.html">Inicio</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-btn">Gerações <span class="arrow">▼</span></a>
-                <ul class="dropdown-menu">
+                <li class="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a href="#" class="dropdown-btn" aria-label="Menu de gerações de consoles">Gerações <span class="arrow" aria-hidden="true">▼</span></a>
+                <ul class="dropdown-menu" aria-label="Submenu de Gerações">
                     <li><a href="firstgeneration.html">1ª Geração</a></li>
                     <li><a href="secondgeneration.html">2ª Geração</a></li>
                     <li><a href="thirdgeneration.html">3ª Geração</a></li>
@@ -33,7 +35,7 @@
         </nav>
     </header>
     <div class="container-generations">
-        <main>
+        <main id="conteudo-principal">
             <h1 class="title-generations">6ª Geração <span class="year-subtitle">(1998 – 2013)</span></h1>
             <h2 class="subtitle-generations">A Era do Áudio Cinematográfico e da Imersão Total</h2>
             <p class="generations-text">
@@ -61,37 +63,37 @@
         </main>
         <div class="canva-container">
             <div class="media-grid">
-                <div class="media-item">
-                    <video class="media-box" src="../music/sixth/shadow-of-the-colossus.mp4" controls></video>
-                    <p class="media-caption">
+                <figure class="media-item">
+                    <video class="media-box" src="../music/sixth/shadow-of-the-colossus.mp4" controls aria-label="Música The Opened Way de Shadow of the Colossus"></video>
+                    <figcaption class="media-caption" tabindex="0">
                         Shadow of the Colossus (2005)
-                        <span class="tooltip">
+                        <span class="tooltip" role="tooltip">
                             <strong>Música:</strong> The Opened Way<br>
                             <strong>Compositor:</strong> Kow Otani<br>
                             <strong>A trilha sonora deste jogo é grandiosa e orquestrada, tocando quase exclusivamente 
                                 durante as épicas batalhas contra os colossos. "The Opened Way" transmite perfeitamente 
                                 a adrenalina da escalada, a escala colossal das criaturas e o peso trágico de derrubá-las.</strong>
                         </span>
-                    </p>
-                </div>
-                <div class="media-item">
-                    <video class="media-box" src="../music/sixth/halo.mp4" controls></video>
-                    <p class="media-caption">
+                    </figcaption>
+                </figure>
+                <figure class="media-item">
+                    <video class="media-box" src="../music/sixth/halo.mp4" controls aria-label="Música Halo Theme de Halo: Combat Evolved"></video>
+                    <figcaption class="media-caption" tabindex="0">
                         Halo: Combat Evolved (2001)
-                        <span class="tooltip">
+                        <span class="tooltip" role="tooltip">
                             <strong>Música:</strong> Halo Theme<br>
                             <strong>Compositor:</strong> Martin O'Donnell<br>
                             <strong>O tema principal inovou ao misturar misteriosos cantos gregorianos com uma percussão 
                                 marcante e arranjos orquestrais. Essa combinação criou uma atmosfera espacial única, 
                                 imponente e inesquecível, tornando-se o maior símbolo sonoro da primeira geração da Microsoft.</strong>
                         </span>
-                    </p>
-                </div>
-                <div class="media-item">
-                    <video class="media-box" src="../music/sixth/kingdom-hearts.mp4" controls></video>
-                    <p class="media-caption">
+                    </figcaption>
+                </figure>
+                <figure class="media-item">
+                    <video class="media-box" src="../music/sixth/kingdom-hearts.mp4" controls aria-label="Música Dearly Beloved de Kingdom Hearts"></video>
+                    <figcaption class="media-caption" tabindex="0">
                          Kingdom Hearts (2002)
-                        <span class="tooltip">
+                        <span class="tooltip" role="tooltip">
                             <strong>Música:</strong> Dearly Beloved<br>
                             <strong>Compositora:</strong> Yoko Shimomura<br>
                             <strong>A premissa de misturar o universo denso de Final Fantasy com a magia da Disney parecia uma 
@@ -99,26 +101,26 @@
                                 "Dearly Beloved", que toca logo na tela inicial do jogo com um piano suave e o som das ondas do 
                                 mar, dita imediatamente o tom emocional, nostálgico e misterioso da aventura.</strong>
                         </span>
-                    </p>
-                </div>
-                <div class="media-item">
-                    <video class="media-box" src="../music/sixth/silent-hill-2.mp4" controls></video>
-                    <p class="media-caption">
+                    </figcaption>
+                </figure>
+                <figure class="media-item">
+                    <video class="media-box" src="../music/sixth/silent-hill-2.mp4" controls aria-label="Música Theme of Laura de Silent Hill 2"></video>
+                    <figcaption class="media-caption" tabindex="0">
                         Silent Hill 2 (2001)
-                        <span class="tooltip">
+                        <span class="tooltip" role="tooltip">
                             <strong>Música:</strong> Theme of Laura<br>
                             <strong>Compositor:</strong> Akira Yamaoka<br>
                             <strong>Trazendo aquela atmosfera densa e inesquecível do terror e suspense psicológico que marcou 
                                 o final dos anos 90, a trilha mistura rock melancólico e ruídos industriais, sendo uma ferramenta 
                                 essencial para construir o clima de tensão do jogo.</strong>
                         </span>
-                    </p>
-                </div>
+                    </figcaption>
+                </figure>
             </div>
         </div>
     </div>
     <footer>
-        <p class = "footer-text">&copy; 2026 Bits & Claves. Todos os direitos reservados.</p>
+        <p class="footer-text">&copy; 2026 Bits & Claves. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>

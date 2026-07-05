@@ -9,14 +9,16 @@
 <body>
     <header class="site-header">
         <div class="logo-container">
-            <img src="../images/logo.png" alt="Bits & Claves" class="logo-img" id="logo">
+            <a href="../index.html" aria-label="Voltar para a página inicial do Bits e Claves">
+                <img src="../images/logo.png" alt="Logotipo do Bits e Claves" class="logo-img" id="logo">
+            </a>
         </div>
-        <nav class="nav-bar">
+        <nav class="nav-bar" aria-label="Navegação Principal">
             <ul class="nav-content">
                 <li><a href="../index.html">Inicio</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-btn">Gerações <span class="arrow">▼</span></a>
-                <ul class="dropdown-menu">
+                <li class="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a href="#" class="dropdown-btn" aria-label="Menu de gerações de consoles">Gerações <span class="arrow" aria-hidden="true">▼</span></a>
+                <ul class="dropdown-menu" aria-label="Submenu de Gerações">
                     <li><a href="firstgeneration.html">1ª Geração</a></li>
                     <li><a href="secondgeneration.html">2ª Geração</a></li>
                     <li><a href="thirdgeneration.html">3ª Geração</a></li>
@@ -33,7 +35,7 @@
         </nav>
     </header>
     <div class="container-generations">
-        <main>
+        <main id="conteudo-principal">
             <h1 class="title-generations">7ª Geração <span class="year-subtitle">(2005 – 2017)</span></h1>
             <h2 class="subtitle-generations">O Áudio em Alta Definição e a Imersão Dinâmica</h2>
             <p class="generations-text">
@@ -60,11 +62,11 @@
         </main>
         <div class="canva-container">
             <div class="media-grid">
-                <div class="media-item">
-                    <video class="media-box" src="../music/seventh/super-mario-galaxy.mp4" controls></video>
-                    <p class="media-caption">
+                <figure class="media-item">
+                    <video class="media-box" src="../music/seventh/super-mario-galaxy.mp4" controls aria-label="Música Gusty Garden Galaxy de Super Mario Galaxy"></video>
+                    <figcaption class="media-caption" tabindex="0">
                         Super Mario Galaxy (2007)
-                        <span class="tooltip">
+                        <span class="tooltip" role="tooltip">
                             <strong>Música:</strong> Gusty Garden Galaxy<br>
                             <strong>Compositores:</strong> Mahito Yokota e Koji Kondo<br>
                             <strong>Foi o primeiro jogo da franquia a utilizar uma orquestra sinfônica real. O uso 
@@ -72,52 +74,52 @@
                                 um novo padrão de qualidade e adaptando sutilmente a orquestração aos saltos e 
                                 movimentos do jogador.</strong>
                         </span>
-                    </p>
-                </div>
-                <div class="media-item">
-                    <video class="media-box" src="../music/seventh/red-dead-redemption.mp4" controls></video>
-                    <p class="media-caption">
+                    </figcaption>
+                </figure>
+                <figure class="media-item">
+                    <video class="media-box" src="../music/seventh/red-dead-redemption.mp4" controls aria-label="Música Far Away de Red Dead Redemption"></video>
+                    <figcaption class="media-caption" tabindex="0">
                         Red Dead Redemption (2010)
-                        <span class="tooltip">
+                        <span class="tooltip" role="tooltip">
                             <strong>Música:</strong> Far Away<br>
                             <strong>Compositores:</strong> José González / Bill Elm e Woody Jackson<br>
                             <strong>O jogo usou um sistema dinâmico genial, onde "caules" isolados de instrumentos tocavam 
                                 conforme a sua ação. O marco narrativo ocorre ao cruzar a fronteira para o México, quando a 
                                 música vocal entra perfeitamente sincronizada com a sua cavalgada solitária.</strong>
                         </span>
-                    </p>
-                </div>
-                <div class="media-item">
-                    <video class="media-box" src="../music/seventh/journey.mp4" controls></video>
-                    <p class="media-caption">
+                    </figcaption>
+                </figure>
+                <figure class="media-item">
+                    <video class="media-box" src="../music/seventh/journey.mp4" controls aria-label="Música Apotheosis de Journey"></video>
+                    <figcaption class="media-caption" tabindex="0">
                          Journey (2012)
-                        <span class="tooltip">
+                        <span class="tooltip" role="tooltip">
                             <strong>Música:</strong> Apotheosis<br>
                             <strong>Compositora:</strong> Austin Wintory<br>
                             <strong>Fez história absoluta ao ser a primeira trilha sonora de videogame indicada ao Grammy. O 
                                 sistema de áudio era tão refinado que as belas melodias de violoncelo fluíam e mudavam de 
-                                acordo com os movimentos e os saltos do jogador na areia, tornando cada jornada única</strong>
+                                acordo com os movimentos e os saltos do jogador na areia, tornando cada jornada única.</strong>
                         </span>
-                    </p>
-                </div>
-                <div class="media-item">
-                    <video class="media-box" src="../music/seventh/dead-space.mp4" controls></video>
-                    <p class="media-caption">
+                    </figcaption>
+                </figure>
+                <figure class="media-item">
+                    <video class="media-box" src="../music/seventh/dead-space.mp4" controls aria-label="Música Welcome Aboard the U.S.G. Ishimura de Dead Space"></video>
+                    <figcaption class="media-caption" tabindex="0">
                         Dead Space (2008)
-                        <span class="tooltip">
+                        <span class="tooltip" role="tooltip">
                             <strong>Música:</strong> Welcome Aboard the U.S.G. Ishimura<br>
                             <strong>Compositor:</strong> Jason Graves<br>
                             <strong>Foi um pioneiro no uso agressivo do som surround 5.1. A equipe usou o silêncio, os sussurros 
                                 direcionais e a respiração do protagonista de forma posicional, transformando o design de som na 
                                 principal ferramenta de imersão espacial e terror psicológico do jogo.</strong>
                         </span>
-                    </p>
-                </div>
+                    </figcaption>
+                </figure>
             </div>
         </div>
     </div>
     <footer>
-        <p class = "footer-text">&copy; 2026 Bits & Claves. Todos os direitos reservados.</p>
+        <p class="footer-text">&copy; 2026 Bits & Claves. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>

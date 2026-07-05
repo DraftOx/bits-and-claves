@@ -9,14 +9,16 @@
 <body>
     <header class="site-header">
         <div class="logo-container">
-            <img src="../images/logo.png" alt="Bits & Claves" class="logo-img" id="logo">
+            <a href="../index.html" aria-label="Voltar para a página inicial do Bits e Claves">
+                <img src="../images/logo.png" alt="Logotipo do Bits e Claves" class="logo-img" id="logo">
+            </a>
         </div>
-        <nav class="nav-bar">
+        <nav class="nav-bar" aria-label="Navegação Principal">
             <ul class="nav-content">
                 <li><a href="../index.html">Inicio</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-btn">Gerações <span class="arrow">▼</span></a>
-                <ul class="dropdown-menu">
+                <li class="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a href="#" class="dropdown-btn" aria-label="Menu de gerações de consoles">Gerações <span class="arrow" aria-hidden="true">▼</span></a>
+                <ul class="dropdown-menu" aria-label="Submenu de Gerações">
                     <li><a href="firstgeneration.html">1ª Geração</a></li>
                     <li><a href="secondgeneration.html">2ª Geração</a></li>
                     <li><a href="thirdgeneration.html">3ª Geração</a></li>
@@ -33,7 +35,7 @@
         </nav>
     </header>
     <div class="container-generations">
-        <main>
+        <main id="conteudo-principal">
             <h1 class="title-generations">8ª Geração <span class="year-subtitle">(2012 – 2020)</span></h1>
             <h2 class="subtitle-generations">Áudio Espacial e a Nova Era da Imersão Interativa</h2>
             <p class="generations-text">
@@ -60,63 +62,63 @@
         </main>
         <div class="canva-container">
             <div class="media-grid">
-                <div class="media-item">
-                    <video class="media-box" src="../music/eighth/no-mans-sky.mp4" controls></video>
-                    <p class="media-caption">
+                <figure class="media-item">
+                    <video class="media-box" src="../music/eighth/no-mans-sky.mp4" controls aria-label="Música Supermoon de No Man's Sky"></video>
+                    <figcaption class="media-caption" tabindex="0">
                         No Man's Sky (2016)
-                        <span class="tooltip">
+                        <span class="tooltip" role="tooltip">
                             <strong>Música:</strong> Supermoon<br>
                             <strong>Compositores:</strong> 65daysofstatic<br>
                             <strong>O jogo inovou ao usar algoritmos complexos para criar música procedural. O motor 
                                 de áudio remixa as faixas baseando-se no clima e horário do planeta, transformando a 
                                 lógica de programação em uma experiência sonora ininterrupta e única.</strong>
                         </span>
-                    </p>
-                </div>
-                <div class="media-item">
-                    <video class="media-box" src="../music/eighth/god-of-war.mp4" controls></video>
-                    <p class="media-caption">
+                    </figcaption>
+                </figure>
+                <figure class="media-item">
+                    <video class="media-box" src="../music/eighth/god-of-war.mp4" controls aria-label="Música God of War Main Theme de God of War"></video>
+                    <figcaption class="media-caption" tabindex="0">
                         God of War (2018)
-                        <span class="tooltip">
+                        <span class="tooltip" role="tooltip">
                             <strong>Música:</strong> God of War (Main Theme)<br>
                             <strong>Compositores:</strong> Bear McCreary<br>
                             <strong>Para acompanhar a mudança de Kratos para a mitologia nórdica, o compositor usou instrumentos 
                                 escandinavos e corais em nórdico antigo. O tema principal, ancorado por um motivo de três notas 
                                 nos vocais masculinos baixos, representa perfeitamente a força e a figura protetora do pai.</strong>
                         </span>
-                    </p>
-                </div>
-                <div class="media-item">
-                    <video class="media-box" src="../music/eighth/hellblade.mp4" controls></video>
-                    <p class="media-caption">
+                    </figcaption>
+                </figure>
+                <figure class="media-item">
+                    <video class="media-box" src="../music/eighth/hellblade.mp4" controls aria-label="Áudio Binaural de Hellblade: Senua's Sacrifice"></video>
+                    <figcaption class="media-caption" tabindex="0">
                          Hellblade: Senua's Sacrifice (2017)
-                        <span class="tooltip">
+                        <span class="tooltip" role="tooltip">
                             <strong>Música:</strong> Áudio Binaural (As Vozes da Psicose)<br>
                             <strong>Compositora:</strong> David García Díaz<br>
                             <strong>Trazendo um clima denso e incrivelmente tenso, o jogo usou captação binaural para simular a 
                                 psicose da protagonista, criando a ilusão perturbadora, imersiva e realista de que há vozes 
                                 sussurrando fisicamente de todos os lados do ambiente, coroando o suspense psicológico moderno.</strong>
                         </span>
-                    </p>
-                </div>
-                <div class="media-item">
-                    <video class="media-box" src="../music/eighth/the-last-of-us-part-ii.mp4" controls></video>
-                    <p class="media-caption">
+                    </figcaption>
+                </figure>
+                <figure class="media-item">
+                    <video class="media-box" src="../music/eighth/the-last-of-us-part-ii.mp4" controls aria-label="Música The Wulf de The Last of Us Part II"></video>
+                    <figcaption class="media-caption" tabindex="0">
                         The Last of Us Part II (2020)
-                        <span class="tooltip">
+                        <span class="tooltip" role="tooltip">
                             <strong>Música:</strong> The Wulf<br>
                             <strong>Compositor:</strong> Gustavo Santaolalla e Mac Quayle<br>
                             <strong>O uso rítmico dos instrumentos de corda para ditar a proximidade do perigo cria uma atmosfera 
                                 de suspense contínua, trazendo aquela sensação de perseguição imersiva digna das melhores obras de 
                                 terror psicológico e sobrevivência.</strong>
                         </span>
-                    </p>
-                </div>
+                    </figcaption>
+                </figure>
             </div>
         </div>
     </div>
     <footer>
-        <p class = "footer-text">&copy; 2026 Bits & Claves. Todos os direitos reservados.</p>
+        <p class="footer-text">&copy; 2026 Bits & Claves. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
