@@ -202,23 +202,6 @@ footer {
     padding: 20px 0; 
 }
 
-/* Configurações para responsividade em dispositivos móveis */
-@media (max-width: 768px) { 
-  .container-principal { 
-    flex-direction: column; 
-    text-align: center; 
-    gap: 24px; 
-  }
-
-  .video-container {
-    max-width: 100%; 
-  }
-  
-  .title-homepage {
-    margin-top: 20px; 
-  }
-}
-
 /* Acessibilidade Motora: Foco visível para navegação por teclado (Tecla TAB) */
 a:focus, video:focus, .dropdown-btn:focus {
     outline: 3px solid #f39c12; 
@@ -240,4 +223,87 @@ a:focus:not(:focus-visible), video:focus:not(:focus-visible), .dropdown-btn:focu
 .dropdown-menu a:focus {
     outline: 2px solid #f39c12;
     background-color: #2b2b2b;
+}
+
+.contact-form {
+    width: 100%;
+    background-color: #2b2b2b; 
+    padding: 30px;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    background-color: #1e1e1e; 
+    border: 1px solid #777;
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: 3px solid #f39c12; 
+    border-color: #f39c12;
+}
+
+.btn-enviar {
+    background-color: #f39c12;
+    color: #1e1e1e;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-top: 10px;
+}
+
+.btn-enviar:hover {
+    background-color: #e67e22;
+}
+
+.btn-enviar:active {
+    transform: scale(0.98);
+}
+
+.btn-enviar:focus {
+    outline: 3px solid #ffffff;
+    outline-offset: 2px;
+}
+
+/* Configurações para responsividade em dispositivos móveis */
+@media (max-width: 768px) { 
+  .container-principal { 
+    flex-direction: column; 
+    text-align: center; 
+    gap: 24px; 
+  }
+
+  .video-container {
+    max-width: 100%; 
+  }
+  
+  .title-homepage {
+    margin-top: 20px; 
+  }
 }

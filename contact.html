@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,14 +9,16 @@
 <body>
     <header class="site-header">
         <div class="logo-container">
-            <img src="images/logo.png" alt="Bits & Claves" class="logo-img" id="logo">
+            <a href="index.html" aria-label="Voltar para a página inicial do Bits e Claves">
+                <img src="images/logo.png" alt="Logotipo do Bits e Claves" class="logo-img" id="logo">
+            </a>
         </div>
-        <nav class="nav-bar">
+        <nav class="nav-bar" aria-label="Navegação Principal">
             <ul class="nav-content">
                 <li><a href="index.html">Inicio</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-btn">Gerações <span class="arrow">▼</span></a>
-                <ul class="dropdown-menu">
+                <li class="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a href="#" class="dropdown-btn" aria-label="Menu de gerações de consoles">Gerações <span class="arrow" aria-hidden="true">▼</span></a>
+                <ul class="dropdown-menu" aria-label="Submenu de Gerações">
                     <li><a href="pages/firstgeneration.html">1ª Geração</a></li>
                     <li><a href="pages/secondgeneration.html">2ª Geração</a></li>
                     <li><a href="pages/thirdgeneration.html">3ª Geração</a></li>
@@ -28,15 +30,30 @@
                     <li><a href="pages/ninthgeneration.html">9ª Geração</a></li>
                 </ul>
                 </li>
-                <li><a href="pages/contact.html">Contato</a></li>
+                <li><a href="contact.html">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <p><a href="mailto:andrigo.reis@hotmail.com">Envie um email para nós</a></p>
+    <main id="conteudo-principal" class="container-principal" style="flex-direction: column; align-items: center; max-width: 700px;">
+        <h1 class="title-homepage">Fale com os Desenvolvedores</h1>
+        <h2 class="subtitle-homepage">Tem alguma dúvida ou sugestão? Entre em contato!</h2>
+        <p class="homepage-text" style="text-align: center; margin-bottom: 30px;">
+            Este projeto foi desenvolvido com muita dedicação. Se quiser conversar sobre o código, design ou sobre a fascinante história do áudio nos games, mande uma mensagem!
+        </p>
+        <form action="mailto:andrigo.reis@hotmail.com" method="post" enctype="text/plain" class="contact-form">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="Nome" required aria-required="true" placeholder="Seu nome completo">
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Sua Mensagem:</label>
+                <textarea id="mensagem" name="Mensagem" rows="6" required aria-required="true" placeholder="Escreva aqui sua sugestão ou comentário..."></textarea>
+            </div>
+            <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+        </form>
     </main>
     <footer>
-        <p class = "footer-text">&copy; 2026 Bits & Claves. Todos os direitos reservados.</p>
+        <p class="footer-text">&copy; 2026 Bits & Claves. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
